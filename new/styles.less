@@ -1,0 +1,221 @@
+.entity { color: orange; }
+
+/* better looking code */
+
+.cursor {
+  background-color: rgba(60, 200, 200, 0.8);
+  border: none!important;
+  width: 8px;
+  height: 8px;
+}
+
+atom-text-editor, .editor-contents { cursor: pointer!important; }
+
+.background-tips {
+  top: 32px;
+  position: fixed;
+  font-weight: normal;
+  color: rgb(229, 229, 229)!important;
+  -webkit-align-items: initial;
+}
+
+.string { color: cyan; font-weight: bolder!important; }
+.comment { color: rgba(120, 265, 280, 1.0); font-size: 13px!important; font-weight: thin; font-family: 'Segoe UI';  }
+
+/*.comment > span { color: white!important; }
+.comment.block { color: white; font-size: 12.5px; } */
+
+.property-name { color: #eaeaea!important; }
+
+.rgb-value { color: hotpink; font-weight: bold!important; }
+
+.source .entity.other.attribute-name { color: cyan; }
+
+.selector { color: #fff!important; font-weight: bolder!important; }
+.keyword { color: #fff; font-weight: bold; }
+.html {  }
+.keyword.control.html { color: #FFF; font-weight: bold; }
+.variable { color: #fff; text-decoration: none; font-weight: bold!important; font-size: 12px; }
+.functions { color: #000; }
+.function { color: #fff; }
+.meta.brace {
+  font-size: 13px; font-weight: bold; color: #eee;
+}
+
+/*
+* Pimpin' my atom shell.
+*/
+
+.config-menu { background-color: transparent!important; }
+.settings-view { background-color: transparent!important; }
+
+.settings-view .panels {
+   background-color: rgba(50, 50, 50, 0.3);
+}
+
+.settings-view .text {
+  color: #fff;
+}
+
+.section-heading, .section-heading > * {
+  color: #fff!important;
+}
+
+.settings-view .config-menu .nav > li > a { color: #eee; }
+
+.scrollbars-visible-always .settings-view ::-webkit-scrollbar-thumb
+{
+  background: transparent!important;
+}
+
+.thumbnail { background: none; border: none; }
+
+.thumbnail .package-name { color: #eee; }
+
+.scrollbars-visible-always .settings-view ::-webkit-scrollbar-track
+{
+  background: rgba(50,50,50, 0.1);
+  opacity: 1.0;
+}
+
+.scrollbars-visible-always .settings-view ::-webkit-scrollbar-track { background: none!important; }
+
+body, html {
+  background-color: transparent!important;
+  background-size: cover;
+}
+
+.gutter
+{
+  opacity: 0.3;
+  color: #fff;
+}
+
+.editor .gutter, .editor
+{
+  background-color: transparent;
+}
+
+atom-workspace, atom-panel, atom-panel.modal, .editor, .gutter, atom-panel-container, atom-workspace-axis, atom-pane { background: transparent!important; }
+
+atom-panel.left, .tree-view-scroller, .tree-view, .project-root {
+  background-color: transparent!important;
+}
+
+.tab-bar:after { display: none!important; }
+
+atom-panel.left, .tool-panel.left, atom-panel.panel-left, .tool-panel.panel-left {
+  border: none; font-family: verdana;
+}
+
+.tree-view > * { cursor: pointer!important; }
+.tree-view .project-root > li,span { text-shadow: none!important; color: rgba(255, 255, 255, 0.75); }
+.panel-left .project-root > li,span:hover { text-shadow: none!important; color: #fff!important; }
+.tree-view-resize-handle { }
+
+.list-group li:not(.list-nested-item).status-added, .list-tree li:not(.list-nested-item).status-added, .list-group li.list-nested-item.status-added > .list-item, .list-tree li.list-nested-item.status-added > .list-item
+{
+  color: #fff;
+  text-shadow: #00fff7 2px 2px 2px!important;
+}
+
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-track, .scrollbars-visible-always /deep/ ::-webkit-scrollbar-corner {
+  background: none!important;
+}
+
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb {
+  background: rgba(80, 200, 100, 0.1)!important;
+  border-radius: 19px;
+}
+
+.scrollbars-visible-always /deep/ ::-webkit-scrollbar-thumb:hover {
+  background: rgba(80, 90, 140, 0.3)!important;
+}
+
+
+.tool-panel, .tree-view, .tree-view-scroller {
+  background-color: rgba(0, 0, 0, 0.2)!important;
+  font-color: #fff!important
+}
+
+.tab-bar { max-height: 32px; background:#000; opacity: 0.5; padding-left: 20px; padding-right: 20px; background-image: none; border:none; border-width: 0px; border-right: none;  }
+
+.tab-bar .tab:before
+{
+  display: none;
+}
+
+.tab-bar .tab:after
+{
+  display: none;
+}
+
+.tab-bar:first-child
+{
+  right: 0px;
+  left: 0px;
+  padding: 0px;
+}
+
+
+.tab-bar .tab > *
+{
+  color: #eee;
+  color:rgba(200, 200, 200, 0.80);
+}
+
+.tab-bar .tab.active > *
+{
+  color: #fff!important;
+  font-weight: bold!important;
+  font-style: none;
+  opacity: 1.0!important;
+}
+
+.tab-bar .tab
+{
+  border: none!important;
+  position: relative;
+  background-image: none!important;
+
+  font-family: 'Segoe Print';
+  font-size: 10px;
+
+  top: 0px;
+  max-width: 140px;
+  height: 28px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  color: #eee;
+  transition: color font-size 1.0s ease-in;
+  border: none!important;
+  border-top: none!important;
+  border-right: none!important;
+  border-bottom: none!important;
+  border-left: 0px solid rgba(189, 189, 189, 0.80)!important;
+
+  box-shadow: none;
+  -webkit-box-shadow: none!important;
+}
+
+.tab:first-child { margin-left: 10px; }
+
+.tab-bar .tab.active, .tab.active > * { height: 32px; font-size: 12px; font-weight: bold; color: #fff!important; }
+
+.tab-bar .tab .close-icon { top: 0px; right: 10px; }
+
+
+/* For light BGs */
+.editor, .gutter { /* background: rgba(60, 20, 20, 0.2); background: rgba(100, 120, 90, 0.3)!important; */ -webkit-filter: blur(1px); }
+.editor, .gutter, .tool-panel {
+  background: rgba(0, 5, 0, 0.2)!important;
+  -webkit-filter:none;
+}
+
+.editor.mini { background: rgba(50, 50, 50, 0.5)!important; }
+/*.editor.mini > * { color: #000!important; } */
+
+.panel > input { background: #eee!important; }
+
+/* End light bgs */

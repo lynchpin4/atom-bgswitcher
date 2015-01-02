@@ -1,0 +1,12 @@
+'global':
+  'editor':
+    'showIndentGuide': true
+    'fontSize': 12
+    'invisibles': {}
+  'exception-reporting':
+    'userId': 'b8372cf6-7693-bf3c-3acb-c93d3b818afd'
+  'welcome':
+    'showOnStartup': false
+  'core':
+    'destroyEmptyPanes': false
+    'autoHideMenuBar': true
